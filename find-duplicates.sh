@@ -2,6 +2,7 @@
 # Duplicate File Finder and Cleanup Helper
 # Safe script to find duplicates before installing Paperless-ngx
 # example: ./find-duplicates.sh /myusbbak1/abbox/DocZ/
+# review report above if ok with delete all duplicates, delete all duplicates: fdupes -r -d -N /myusbbak1/abbox/DocZ/ | tee deletion_log.txt
 
 DOCS_DIR="${1:-$HOME/Documents}"
 
