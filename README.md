@@ -323,6 +323,23 @@ docker-compose exec webserver document_importer /usr/src/paperless/export
 - GitHub Issues: https://github.com/paperless-ngx/paperless-ngx/issues
 - Discussions: https://github.com/paperless-ngx/paperless-ngx/discussions
 - Discord: https://discord.gg/paperless-ngx
+- 
+
+## Tips
+1. fdupes (Easiest & Most Popular) ⭐
+Fdupes is a free command-line tool that compares file sizes and checksums to find duplicates TecMintAsk Ubuntu. It's the simplest to use!
+Install:
+bashsudo apt install fdupes
+Find duplicates (just look, don't delete):
+bashfdupes -r /path/to/your/documents
+Find and delete interactively (you choose which to keep):
+bashfdupes -r -d /path/to/your/documents
+Common options:
+
+-r = recursive (search subdirectories)
+-d = delete duplicates interactively (prompts you)
+-S = show size of duplicates
+-m = summarize duplicate information
 
 ## License
 
