@@ -326,20 +326,16 @@ docker-compose exec webserver document_importer /usr/src/paperless/export
 - 
 
 ## Tips
-1. fdupes (Easiest & Most Popular) ⭐
-Fdupes is a free command-line tool that compares file sizes and checksums to find duplicates TecMintAsk Ubuntu. It's the simplest to use!
+rdfind (Fast & Smart)
+Rdfind uses a ranking algorithm to identify the original file vs duplicates, making it faster than other tools BeebomMakeUseOf. It creates a results.txt file you can review before deleting anything Wondershare Recoverit.
 Install:
-bashsudo apt install fdupes
-Find duplicates (just look, don't delete):
-bashfdupes -r /path/to/your/documents
-Find and delete interactively (you choose which to keep):
-bashfdupes -r -d /path/to/your/documents
-Common options:
-
--r = recursive (search subdirectories)
--d = delete duplicates interactively (prompts you)
--S = show size of duplicates
--m = summarize duplicate information
+bashsudo apt install rdfind
+Scan for duplicates (safe - just creates report):
+bashrdfind /path/to/your/documents
+Review results:
+bashcat results.txt
+Delete duplicates after review:
+bashrdfind -deleteduplicates true /path/to/your/documents
 
 ## License
 
