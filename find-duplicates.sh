@@ -1,6 +1,7 @@
 #!/bin/bash
 # Duplicate File Finder and Cleanup Helper
 # Safe script to find duplicates before installing Paperless-ngx
+# example: ./find-duplicates.sh /myusbbak1/abbox/DocZ/
 
 DOCS_DIR="${1:-$HOME/Documents}"
 
